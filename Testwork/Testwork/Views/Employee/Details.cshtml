@@ -1,0 +1,53 @@
+﻿@model Testwork.Models.Employee
+
+<h2>Employee Details</h2>
+<table class="table">
+    <tr>
+        <th>Employee Code</th>
+        <td>@Model.EmployeeCode</td>
+    </tr>
+    <tr>
+        <th>Employee Name</th>
+        <td>@Model.EmployeeName</td>
+    </tr>
+    <tr>
+        <th>Date of Birth</th>
+        <td>@Model.DateOfBirth.ToString("dd/MM/yyyy")</td>
+    </tr>
+    <tr>
+        <th>Gender</th>
+        <td>@(Model.Gender ? "Male" : "Female")</td>
+    </tr>
+    <tr>
+        <th>Department</th>
+        <td>@Model.Department</td>
+    </tr>
+    <tr>
+        <th>Designation</th>
+        <td>@Model.Designation</td>
+    </tr>
+    <tr>
+        <th>Basic Salary</th>
+        <td>@Model.BasicSalary</td>
+    </tr>
+    <tr>
+        <th>Dearness Allowance</th>
+        <td>@ViewBag.DearnessAllowance</td>
+    </tr>
+    <tr>
+        <th>Conveyance Allowance</th>
+        <td>@ViewBag.ConveyanceAllowance</td>
+    </tr>
+    <tr>
+        <th>House Rent Allowance</th>
+        <td>@ViewBag.HouseRentAllowance</td>
+    </tr>
+    <tr>
+        <th>Professional Tax</th>
+        <td>@ViewBag.ProfessionalTax</td>
+    </tr>
+    <tr>
+        <th>Total Salary</th>
+        <td>@ViewBag.TotalSalary</td>
+    </tr>
+</table>
